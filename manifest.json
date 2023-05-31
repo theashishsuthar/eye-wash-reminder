@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Eye Wash Reminder",
+    "version": "1.0",
+    "description": "A Chrome extension to remind you to take eye breaks.",
+    "permissions": ["notifications", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+      },
+    "action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["popup.css"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
